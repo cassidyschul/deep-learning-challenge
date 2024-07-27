@@ -21,7 +21,7 @@ The target variable in all models was the 'IS_SUCCESSFUL' value, one meaning the
     * Neural Network Model Optimization 1:
         * Features: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, ASK_AMT
         * Non-benefitical columns: EIN, NAME, STATUS, SPECIAL_CONSIDERATIONS
-        * In this model, the number of bins was increased for the APPLICATION_TYPE (cutoff = 100) and CLASSIFICATION (cutoff = 500)features
+        * In this model, the number of bins was increased for the APPLICATION_TYPE (cutoff = 100) and CLASSIFICATION (cutoff = 500) features
         * This model included three layers. The first (80 neurons) and second (80 neurons) layers used the relu activation function and the output layer used the sigmoid activation function. These activiation functions were selected because they are most commonly used in neural network model development. 
         * The number of epochs was increased to 200. 
         * Accuracy: 0.7287
@@ -51,6 +51,6 @@ The target variable in all models was the 'IS_SUCCESSFUL' value, one meaning the
 
 ## Summary
 
-The original neural network model produced the lowest accuracy percentage. Various parameters were altered to improve the model. The best neural network model was the third optimization model. Althought none of the models produced above a 75% predictive accuracy, this model produced the greatest accuracy and smallest loss. It should be noted that the all models produced very similar accuracy and loss results. Futher, the test set accuracy and training accuracy are close, indicating the model is not overfitting.  Overall, I recommend the model for applicant success prediction. 
+The original neural network model produced the lowest accuracy percentage. Various parameters were altered to improve the model. The best neural network model was the third optimization model. Althought none of the models produced above a 75% predictive accuracy, this model produced the greatest accuracy and smallest loss. It should be noted that the all models produced very similar accuracy and loss results. Futher, the test set accuracy value and training set accuracy values are close, indicating the model is not overfitting.  Overall, I recommend the model for applicant success prediction. 
 
 Another type of model that I would recommend using in this scenario is a LogisticRegression model since this is a binary classification problem. A LogisticRegession model is simplier, has shorter training times, and could produce similary predictive accuracy. 
